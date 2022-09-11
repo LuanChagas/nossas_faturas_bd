@@ -5,5 +5,6 @@ CREATE TABLE IF NOT EXISTS faturas (
     isFechada BOOL NOT NULL,
     isPaga BOOL NOT NULL,
     id_cartao INT NOT NULL,
+    id_cartao_data INT NOT NULL,
     FOREIGN KEY(id_cartao) REFERENCES cartoes(id)
 );
