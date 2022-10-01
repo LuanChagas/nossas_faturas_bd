@@ -3,8 +3,8 @@ CREATE TABLE IF NOT EXISTS cartoes (
     nome VARCHAR(30) NOT NULL UNIQUE,
     pix VARCHAR(500),
     dia_fechamento TINYINT NOT NULL,
-    dia_fechamento TINYINT NOT NULL,
-    limite_total DOUBLE NOT NULL,
-    limite_parcial DOUBLE default 0.0,
+    dia_vencimento TINYINT NOT NULL,
+    limite_parcial DECIMAL(5,2) default 0.0,
+    limite_total DECIMAL(5,2) NOT NULL,
 );
 

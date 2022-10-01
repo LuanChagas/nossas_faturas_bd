@@ -1,9 +1,9 @@
 CREATE TABLE IF NOT EXISTS compras (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(50) NOT NULL,
-    descricao VARCHAR(50),
+    descricao VARCHAR(50) NOT NULL,
+    local VARCHAR(30),
     data_compra DATE NOT NULL,
-    valor DOUBLE NOT NULL,
+    valor DECIMAL(5,2) NOT NULL,
     parcelas TINYINT(2) default 1,
     id_pessoa INT NOT NULL,
     id_cartao INT NOT NULL,
