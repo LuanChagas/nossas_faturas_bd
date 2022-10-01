@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS compras (
     data_compra DATE NOT NULL,
     valor DECIMAL(5,2) NOT NULL,
     parcelas TINYINT default 1,
-    id_pessoa INT NOT NULL,
+    id_usuario INT NOT NULL,
     id_cartao INT NOT NULL,
     FOREIGN KEY(id_usuario) REFERENCES usuarios(id),
     FOREIGN KEY(id_cartao) REFERENCES cartoes(id)
